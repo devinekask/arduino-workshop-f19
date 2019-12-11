@@ -173,7 +173,24 @@ $ npm run rebuild-deps
 
 Launch the app again. You should see the onboard LED blink! Once this works, try connecting a real LED again.
 
-#### Projects to build
+### Components to test
+
+You've got a lot of different components in your kit, which you can use with johnny five. Build and test the following examples:
+
+#### Inputs
+
+- Button: http://johnny-five.io/examples/button/
+- Potentiometer: http://johnny-five.io/examples/potentiometer/ - try this out with the joystick from your kit as well! The joystick is a combination of 2 potentionmeters and one push button.
+- Photoresistor: http://johnny-five.io/examples/photoresistor/. You can use this to create a laser-tripwire (http://johnny-five.io/examples/laser-trip-wire/), ask the professor for a laser diode to play with.
+- Ultrasonic Sensor: http://johnny-five.io/examples/proximity-hcsr04/ (note: you'll need to upload a different firmata sketch first)
+
+#### Outputs
+
+- Piezzo sound: http://johnny-five.io/examples/piezo/
+- DC motor: http://johnny-five.io/examples/motor/
+- Servo motor(ask the professor for a servo to play with): http://johnny-five.io/examples/servo/
+
+### The next steps
 
 Now that we've got a working system combining Arduino and frontend code, you've got a lot of interesting options to explore. Use the docs at http://johnny-five.io/ and try building some of the following ideas:
 
