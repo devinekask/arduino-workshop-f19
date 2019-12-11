@@ -190,9 +190,11 @@ You've got a lot of different components in your kit, which you can use with joh
 - DC motor: http://johnny-five.io/examples/motor/
 - Servo motor(ask the professor for a servo to play with): http://johnny-five.io/examples/servo/
 
-### The next steps
+### Combinations
 
-Now that we've got a working system combining Arduino and frontend code, you've got a lot of interesting options to explore. Use the docs at http://johnny-five.io/ and try building some of the following ideas:
+Use your imagination to combine inputs with outputs. Sound a piezzo alarm when the laser tripwire gets triggered. Control a servo angle based on the distance of your ultrasonic sensor. Use the joystick as a speed controller for your DC motor.
+
+Because you are in javascript land, you can combine the hardware with browser logic. Make sure to try the following projects:
 
 1. Fade an LED using an `<input type="range">`
 2. Change a servo angle based on the x position of your mouse pointer on the screen
