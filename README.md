@@ -190,6 +190,24 @@ You've got a lot of different components in your kit, which you can use with joh
 - DC motor: http://johnny-five.io/examples/motor/
 - Servo motor(ask the professor for a servo to play with): http://johnny-five.io/examples/servo/
 
+### Modifying the html
+
+You'll read the following on https://webpack.electron.build/development.html#use-of-html-webpack-plugin
+
+> You might notice that you don’t need an index.html to get started on your application. That’s because it is created for you, as it adds in a few extra configurations needed for the electron environment. If you are creating an electron application with webpack, you are most likely creating a Single Page Application anyways. So because of that, there is already a <div id="app"></div> provided in the markup that you can mount your application onto.
+
+If you do want to have a custom html, we'll need to extend the  webpack config of our project. Add a config object for electron webpack to our package.json (see docs at https://webpack.electron.build/configuration for more info), containing the path to your html file:
+
+```
+"electronWebpack": {
+  "renderer": {
+    "template": "src/renderer/index.html"
+  }
+}
+```
+
+Put an html file in that location and test the application. You should see your custom html.
+
 ### Combinations
 
 Use your imagination to combine inputs with outputs. Sound a piezzo alarm when the laser tripwire gets triggered. Control a servo angle based on the distance of your ultrasonic sensor. Use the joystick as a speed controller for your DC motor.
@@ -204,3 +222,5 @@ Because you are in javascript land, you can combine the hardware with browser lo
 ## Other things to check
 
 - [View Arduino, The documentary](https://vimeo.com/18539129) (28 min)
+- [Star Wars Imperial March with Floppy and Arduino](https://www.youtube.com/watch?v=B_Q6jMUdfYc)
+- [The breakfast machine](https://www.youtube.com/watch?v=E2evC2xTNWg)
